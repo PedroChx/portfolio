@@ -3,8 +3,8 @@
     "name": "Pedro Chavez Hernández",
     "label": "Full Stack Developer",
     "image": "public/img/profilepic.jpg",
-    "email": "pedrochh1@gmai.com",
-    "phone": "+34 688888888",
+    "email": "pedrochh1@gmail.com",
+    "phone": "+52 4421127484",
     "url": "#",
     "summary": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, ipsum. Quasi deleniti repudiandae distinctio vitae et molestias, exercitationem quam reiciendis aspernatur nulla illum quia delectus nihil magnam, iste rem. Deserunt.",
     "location": {
@@ -36,7 +36,7 @@
       "endDate": "2027",
       "summary": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure odit tempore veniam corrupti? Vitae, cumque harum possimus voluptatibus tempore totam sequi recusandae distinctio quas consequatur, nemo similique ratione, nostrum libero!",
       "highlights": [
-        "Started the company"
+        ""
       ]
     }, 
     {
@@ -47,7 +47,7 @@
       "endDate": null,
       "summary": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure odit tempore veniam corrupti? Vitae, cumque harum possimus voluptatibus tempore totam sequi recusandae distinctio quas consequatur, nemo similique ratione, nostrum libero!",
       "highlights": [
-        "Started the company"
+        ""
       ]
     }
   ],
