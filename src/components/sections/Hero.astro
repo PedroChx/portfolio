@@ -1,10 +1,12 @@
 ---
 import { basics } from '@cv'
+import { languages } from "@cv"
 import Section from '@/components/Section.astro'
 import Mail from '@/icons/Mail.astro'
 import Phone from '@/icons/Phone.astro'
 import LinkedIn from '@/icons/LinkedIn.astro'
 import GitHub from '@/icons/GitHub.astro'
+import WorldMap from '@/icons/WorldMap.astro'
 
 const { name, label, image, location, profiles, phone, email } = basics
 const { city, country } = location 
@@ -15,14 +17,20 @@ const SOCIAL_ICONS: Record<string, any> = {
 }
 ---
 <Section>
-    <div class="container">
-        <div class="info">
-            <h1>{name}</h1>
-            <h2>{label}</h2
-            <span>
-                <!-- Robar Icono -->
-                {city}, {country}
-            </span>
+  <div class="container">
+    <div class="info">
+      <h1>{ name }</h1>
+      <h2>{ label }</h2> <div>
+        <ul>
+          {languages.map((language) => (
+            <li>{language.language}</li>
+          ))}
+        </ul>
+      </div> 
+      <span>
+        <WorldMap />
+        {city}, {country}
+      </span>
             <footer>
                 {
                     email && (
@@ -51,18 +59,6 @@ const SOCIAL_ICONS: Record<string, any> = {
                 }
 
                 {
-                    phone && (
-                        <a 
-                        href={'tel:&{phone}'}
-                        title={`Llamar por télefono a ${name} al número ${phone}`}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        >
-                            <Phone/>
-                        </a>
-                    )
-                }
-                {
                     profiles.map(({ network, url, username }) => {
                       const Icon = SOCIAL_ICONS[network]
           
@@ -87,5 +83,91 @@ const SOCIAL_ICONS: Record<string, any> = {
 </Section>
 
 <style>
+    .container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+    
+    .info{
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        padding-right: 32px;
+    }
+
+    h1{
+        font-size: 2rem;
+    }
+
+    h2{
+        color: #444;
+        font-weight: 500;
+        font-size: 1.1rem;
+        text-wrap: balance;
+    }
+
+    img {
+        aspect-ratio: 1:1;
+        object-fit: cover;
+        width: 128px;
+        border-radius: 6px;
+    }
+
+    span {
+        color: #666;
+        display: flex;
+        align-items: center;
+        gap: 0.25rem;
+        font-size: .85rem;
+        letter-spacing: -0.05rem;
+    }
+
+    footer{
+        display: flex;
+        gap: 6px;
+        margin-top: 8px;
+    }
+
+    footer a{
+        background-color: white;
+        color: rgb(0, 0, 0);
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #eee;
+        padding: 4px;
+        height: 32px;
+        width: 32px;
+        border-radius: 6px;
+        transition: all .3s ease;
+
+    }
+
+    footer a:hover{
+        background-color: rgb(0, 0, 0);
+        color: #f5f4f4;
+        border: 1px solid;
+    }
+
+    li {
+    align-items: center;
+    background: #3077a7;
+    border-radius: 6px;
+    color: rgb(255, 255, 255);
+    display: flex;
+    font-size: 0.8rem;
+    font-weight: 500;
+    gap: 4px;
+    padding: 0.2rem 0.6rem;
+    }
+
+    ul {
+    display: inline-flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    }
 
 </style>
