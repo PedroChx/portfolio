@@ -1,10 +1,10 @@
 {
   "basics": {
-    "name": "Pedro Chavez Hernández",
+    "name": "Haniel Ulises Vasquez Morales",
     "label": "Full Stack Developer",
-    "image": "public/img/profilepic.jpg",
-    "email": "pedrochh1@gmail.com",
-    "phone": "+52 4421127484",
+    "image": "public/img/gragasmid.jpg",
+    "email": "midgragas22@gmail.com",
+    "phone": "+52 4422134409",
     "url": "#",
     "summary": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, ipsum. Quasi deleniti repudiandae distinctio vitae et molestias, exercitationem quam reiciendis aspernatur nulla illum quia delectus nihil magnam, iste rem. Deserunt.",
     "location": {
@@ -17,12 +17,12 @@
     "profiles": [
       {
         "network": "LinkedIn",
-        "username": "Pedro Chávez",
+        "username": "owo",
         "url": "#"
       },
       {
         "network": "GitHub",
-        "username": "PedroChx",
+        "username": "owo",
         "url": "#"
       }
     ]
@@ -183,11 +183,11 @@
   }],
   "projects": [
     {
-      "name": "IndexUAQ",
+      "name": "Topología en Visión Artificial",
       "isActive": false,
-      "description": "Landing Page para los estudiantes de la Univrersidad Autónoma de Querétaro",
+      "description": "Modelo de visión artificial para identificar formas y la equivalencia entre las formas",
       "highlights": [
-        "Diseño",
+        "C++",
         "En desarrollo"
       ],
       "url": "#",
@@ -206,13 +206,13 @@
       "github": "#"
     },
     {
-      "name": "Subneteo Redes",
+      "name": "Wolfestein 3D en C",
       "isActive": true,
-      "description": "Página para generar subneteos de redes personalizadas",
+      "description": "Impementación de un juego usando el algoritmo de Ray Casting",
       "highlights": [
         "Usuarios Activos",
-        "Redes",
-        "JavaScript"
+        "Algoritmo",
+        "C"
       ],
       "url": "#",
       "github": "#"

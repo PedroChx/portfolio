@@ -1,9 +1,9 @@
 ---
-const { link } = Astro.props
-const { url } = Astro.props
+const { link, url, class: customClass } = Astro.props;
 ---
+
 <section>
-    {link && <a href= {url}> <h2>{ link }</h2></a>}
+    {link && <a href={url} class={`link-button ${customClass ?? ''}`}><h2>{ link }</h2></a>}
     <slot />
 </section>
 
@@ -13,12 +13,35 @@ const { url } = Astro.props
         margin: 0 auto 72px;
     }
 
-    h2{
+    .link-button h2 {
+        width: 65%;
+        display: flex;
         margin-bottom: 8px;
-        font-weight: 700;
         line-height: 1.5;
         font-size: 1rem;
         color: black;
-
     }
+
+    button-black-center {
+        display: block; 
+        text-align: center; 
+    }
+
+    .button-black-center h2 {
+        background-color: black; 
+        color: white; 
+        padding: 1rem 2rem; 
+        border-radius: 0.25rem;
+        transition: background-color 0.3s, transform 0.3s; 
+        display: inline-block; 
+        margin: 0;
+        text-decoration: none;
+    }
+
+    .button-black-center h2:hover {
+        background-color: #ffffff;
+        color: black;
+        border: 1px solid black;
+        transform: scale(1.05);
+   
 </style>

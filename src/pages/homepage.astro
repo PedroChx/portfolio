@@ -1,32 +1,21 @@
 ---
 import Layout from '@/layouts/Layout.astro';
 
-import About from '@/components/sections/About.astro';
-import Conections from '@/components/sections/Conections.astro';
-import Education from '@/components/sections/Education.astro';
-import Experience from '@/components/sections/Experience.astro';
-import Hero from '@/components/sections/Hero.astro';
-import Projects from '@/components/sections/Projects.astro';
-import Skills from '@/components/sections/Skills.astro';
+import Presentation from '@/components/sections/Presentation.astro';
+import Link from "@/components/Link.astro"
 ---
 
 <Layout title="Homepage">
-	<main>
-		<Hero />
-		<About />
-		<Education />
-		<Experience />
-		<Skills />
-		<Projects />
-		<Conections />
-	</main>
+	<Presentation />
+	<Link url="." link="　　　　　　　　!Visita mi CV!" class="button-black-center"/>
 </Layout>
 
 <style>
-	main{
-		padding: 4rem;
-		margin: auto;
-		width: 100%;
-	}
+	
+main{
+	padding: 4rem;
+	margin: auto;
+	width: 100%;
+}
 
 </style>

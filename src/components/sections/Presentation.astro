@@ -1,0 +1,47 @@
+---
+import { basics } from "@cv"
+
+import Section from "../Section.astro"
+
+const { name, image } = basics
+---
+
+<Section>
+
+    <div class="req">
+        <ul>
+            <li>
+                <h1>Primer Parcial CV</h1>
+                <h4>Diseño de Sistemas en Internet</h4>
+                <h4> Pedro Chávez Hernández </h4>
+            </li>
+        </ul> 
+        <img src="public/img/profilepic.jpg" alt="profilepic">
+    </div>
+
+</Section>
+
+
+<style>
+    html {
+        margin: 5rem;
+    }
+
+    .req {
+        display: flex;
+    }
+
+    ul {
+        line-height: 3rem;
+        letter-spacing: 1.5px;
+        display: flex;
+    }
+
+    img {
+        margin-left: 1rem;
+        aspect-ratio: 1:1;
+        object-fit: cover;
+        width: 128px;
+        border-radius: 6px;
+    }
+</style>
