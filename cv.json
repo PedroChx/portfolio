@@ -1,15 +1,15 @@
 {
   "basics": {
-    "name": "Haniel Ulises Vasquez Morales",
+    "name": "Pedro Chávez Hernández",
     "label": "Full Stack Developer",
     "image": "public/img/gragasmid.jpg",
-    "email": "midgragas22@gmail.com",
-    "phone": "+52 4422134409",
+    "email": "pedrochh1@gmail.com",
+    "phone": "+52 4421127584",
     "url": "#",
     "summary": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, ipsum. Quasi deleniti repudiandae distinctio vitae et molestias, exercitationem quam reiciendis aspernatur nulla illum quia delectus nihil magnam, iste rem. Deserunt.",
     "location": {
       "address": "",
-      "postalCode": "08820",
+      "postalCode": "76047",
       "city": "Querétaro",
       "countryCode": "ES",
       "country": "México"
@@ -17,12 +17,12 @@
     "profiles": [
       {
         "network": "LinkedIn",
-        "username": "owo",
+        "username": "Pedro Chávez Hernández",
         "url": "#"
       },
       {
         "network": "GitHub",
-        "username": "owo",
+        "username": "PedroChx",
         "url": "#"
       }
     ]
@@ -38,17 +38,6 @@
       "highlights": [
         ""
       ]
-    }, 
-    {
-      "name": "Valve",
-      "position": "Game Development Software Engineer",
-      "url": "#",
-      "startDate": "2027",
-      "endDate": null,
-      "summary": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure odit tempore veniam corrupti? Vitae, cumque harum possimus voluptatibus tempore totam sequi recusandae distinctio quas consequatur, nemo similique ratione, nostrum libero!",
-      "highlights": [
-        ""
-      ]
     }
   ],
   "education": [
@@ -59,23 +48,9 @@
     "studyType": "Bachelor",
     "startDate": "2022-08-01",
     "endDate": "2026-12-01",
-    "score": "4.0",
-    "courses": [
-      "DB1101 - Basic SQL"
-    ]
-  },
-  {
-    "institution": "Universidad Autónoma de Querétaro",
-    "url": "#",
-    "area": "Maestría en Ciencias de la Computación",
-    "studyType": "Bachelor",
-    "startDate": "2026-12-01",
-    "endDate": "2028-12-01",
-    "score": "4.0",
-    "courses": [
-      "DB1101 - Basic SQL"
-  ]
+    "score": "9.31"
   }],
+
   "awards": [{
     "title": "Award",
     "date": "2014-11-01",
